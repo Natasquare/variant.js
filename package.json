@@ -1,6 +1,6 @@
 {
     "name": "variant.js",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Convert a string into different kind of Unicode variants!",
     "main": "index.js",
     "scripts": {
