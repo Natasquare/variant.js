@@ -4,7 +4,7 @@
 npm i tounicode
 ```
 
-Function to convert a string into different kind of Unicode variants.  Originally created to show some "cool" styled text in the browsers built-in `alert()`, `prompt()` and `confirm()` dialogs.
+Function to convert a string into different kind of Unicode variants. Created to show some "cool" styled text in the browsers built-in `alert()`, `prompt()` and `confirm()` dialogs.
 
 |Variant     | Alias | Description                   | Example           |
 |:--------- |:-----:|:----------------------------- |:----------------- |
@@ -36,6 +36,6 @@ Besides that, the text can be enriched with underline or strike (or both) throug
 
 ### Notes
 
-* There is no support for special chars such as `&`, `%` and so on (yet, could be implemented where unicode support it)
+* There is no support for special chars such as `&`, `%` and so on.
 * Not all combinations of variants and flags is guaranteed to work.
 * Some variants does not support numbers some variants does not support capital or small letters.
