@@ -1,10 +1,20 @@
-# toVariant
+# variant.js
+
+### Install
 
 ```bash
-npm i tovariant
+npm i variant.js
 ```
 
-Function to convert a string into different kind of Unicode variants. Created to show some "cool" styled text in the browsers built-in `alert()`, `prompt()` and `confirm()` dialogs.
+### Testing
+
+```bash
+npm test
+```
+
+### Info
+
+Convert a string into different kind of Unicode variants. Created to show some "cool" styled text in the browsers built-in `alert()`, `prompt()` and `confirm()` dialogs.
 
 |Variant     | Alias | Description                   | Example           |
 |:--------- |:-----:|:----------------------------- |:----------------- |
@@ -33,6 +43,13 @@ Besides that, the text can be enriched with underline or strike (or both) throug
 | gothic |   underline   | 𝔤̲𝔬̲𝔱̲𝔥̲𝔦̲𝔠̲|
 | paranthesis |   strike   | 𝚙̶𝚊̶𝚛̶𝚊̶𝚗̶𝚝̶𝚑̶𝚎̶𝚜̶𝚒̶𝚜̶ |
 
+### Example
+
+```js
+const variant = require("variant.js");
+
+console.log(variant("Hello World!", "monospace", "strike")); // "𝙷̶𝚎̶𝚕̶𝚕̶𝚘̶ ̶𝚆̶𝚘̶𝚛̶𝚕̶𝚍̶!̶"
+```
 
 ### Notes
 

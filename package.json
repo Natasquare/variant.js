@@ -1,25 +1,25 @@
 {
-  "name": "tovariant",
-  "version": "1.0.0",
-  "description": "Convert a string into different kind of Unicode variants!",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo ok"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Natasquare/toUnicode.git"
-  },
-  "keywords": [
-    "unicode",
-    "cool",
-    "text",
-    "style",
-    "alert",
-    "confirm",
-    "prompt"
-  ],
-  "author": "Natasquare",
-  "license": "MIT",
-  "homepage": "https://github.com/Natasquare/toUnicode#readme"
+    "name": "variant.js",
+    "version": "1.0.1",
+    "description": "Convert a string into different kind of Unicode variants!",
+    "main": "index.js",
+    "scripts": {
+        "test": "node test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Natasquare/variant.js.git"
+    },
+    "keywords": [
+        "unicode",
+        "cool",
+        "text",
+        "style",
+        "alert",
+        "confirm",
+        "prompt"
+    ],
+    "author": "Natasquare",
+    "license": "MIT",
+    "homepage": "https://github.com/Natasquare/variant.js#readme"
 }
