@@ -1,7 +1,7 @@
-# toUnicode
+# toVariant
 
 ```bash
-npm i tounicode
+npm i tovariant
 ```
 
 Function to convert a string into different kind of Unicode variants. Created to show some "cool" styled text in the browsers built-in `alert()`, `prompt()` and `confirm()` dialogs.
