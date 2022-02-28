@@ -6,12 +6,6 @@
 npm i variant.js
 ```
 
-### Testing
-
-```bash
-npm test
-```
-
 ### Info
 
 Convert a string into different kind of Unicode variants. Created to show some "cool" styled text in the browsers built-in `alert()`, `prompt()` and `confirm()` dialogs.
@@ -36,7 +30,7 @@ Convert a string into different kind of Unicode variants. Created to show some "
 | fullwidth  | w   | Wider monospace font   | ｆｕｌｌｗｉｄｔｈ |
 
 
-Besides that, the text can be enriched with underline or strike (or both) through the flags param:
+The text can be enriched with underline or strike (or both) through the flags param:
 
 |Variant     | Flags               | Example           |
 |:--------- |:-----|:---------------------------- |
@@ -48,7 +42,7 @@ Besides that, the text can be enriched with underline or strike (or both) throug
 ```js
 const variant = require("variant.js");
 
-console.log(variant("Hello World!", "monospace", "strike")); // "𝙷̶𝚎̶𝚕̶𝚕̶𝚘̶ ̶𝚆̶𝚘̶𝚛̶𝚕̶𝚍̶!̶"
+console.log(variant.format("Hello World", "monospace", "strike")); // "𝙷̶𝚎̶𝚕̶𝚕̶𝚘̶ ̶𝚆̶𝚘̶𝚛̶𝚕̶𝚍̶"
 ```
 
 ### Notes

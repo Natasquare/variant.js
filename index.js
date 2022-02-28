@@ -1,11 +1,16 @@
+module.exports = {
+    format,
+    getStyles
+}
+
 /**
  * @param {string} i Your string
  * @param {string} o The Unicode variant
  * @param {string} r String flags
- * @description Convert a string into different kind of ✨ Unicode ✨ variants, created to show some 'cool' styled text in the browsers built-in `alert()`, `prompt()` and `confirm()` dialogs
+ * @description Convert a string into different kind of ✨ Unicode ✨ variants.
  */
 
-module.exports = (i, o, r) => {
+function format(i, o, r) {
     const n = {
             m: [120432, 120822],
             b: [119808, 120782],
@@ -45,9 +50,20 @@ module.exports = (i, o, r) => {
         };
     for (
         var s = {
-                m: { " ": 8192, "-": 8211 },
-                i: { h: 8462 },
-                g: { C: 8493, H: 8460, I: 8465, R: 8476, Z: 8488 },
+                m: {
+                    " ": 8192,
+                    "-": 8211
+                },
+                i: {
+                    h: 8462
+                },
+                g: {
+                    C: 8493,
+                    H: 8460,
+                    I: 8465,
+                    R: 8476,
+                    Z: 8488
+                },
                 o: {
                     0: 9450,
                     1: 9312,
@@ -63,9 +79,7 @@ module.exports = (i, o, r) => {
                 p: {},
                 w: {},
             },
-            c = 97;
-        c <= 122;
-        c++
+            c = 97; c <= 122; c++
     )
         s.p[String.fromCharCode(c)] = c - 97 + 9372;
     for (c = 97; c <= 122; c++) s.w[String.fromCharCode(c)] = c - 97 + 65345;
@@ -85,13 +99,44 @@ module.exports = (i, o, r) => {
             e &&
             (i = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".indexOf(
                 o
-            )) > -1
-                ? (l += String.fromCodePoint(i + n[e][0]))
-                : e && (i = "0123456789".indexOf(o)) > -1
-                ? (l += String.fromCodePoint(i + n[e][1]))
-                : (l += o),
+            )) > -1 ?
+            (l += String.fromCodePoint(i + n[e][0])) :
+            e && (i = "0123456789".indexOf(o)) > -1 ?
+            (l += String.fromCodePoint(i + n[e][1])) :
+            (l += o),
             b && (l += "̲"),
             a && (l += "̶");
     }
     return l;
+};
+
+/**
+ * @description Get a list of variants and flags
+ */
+
+function getStyles() {
+    return {
+        variants: [
+            "monospace",
+            "bold",
+            "italic",
+            "bold italic",
+            "script",
+            "bold script",
+            "gothic",
+            "gothic bold",
+            "doublestruck",
+            "sans",
+            "bold sans",
+            "italic sans",
+            "bold italic sans",
+            "circled",
+            "parathesis",
+            "fullwidth"
+        ],
+        flags: [
+            "underline",
+            "strike"
+        ]
+    };
 };
